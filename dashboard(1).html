@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Life Routes - Dashboard</title>
+<style>
+:root{
+--primary:#16a34a;
+--accent:#22c55e;
+--bg:#0f172a;
+--card:#1e293b;
+--text:#fff;
+--muted:#94a3b8;
+}
+*{box-sizing:border-box;font-family:Arial,sans-serif}
+body{margin:0;background:var(--bg);color:var(--text)}
+header{display:flex;justify-content:space-between;align-items:center;padding:18px 24px;background:#111827;position:sticky;top:0}
+.logo{font-size:24px;font-weight:bold;color:var(--accent)}
+nav a{color:#fff;text-decoration:none;margin-left:18px}
+.container{max-width:1200px;margin:auto;padding:24px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.card{background:var(--card);padding:20px;border-radius:14px}
+.metric{font-size:34px;font-weight:bold;color:var(--accent)}
+.progress{height:10px;background:#334155;border-radius:999px;overflow:hidden;margin-top:8px}
+.bar{height:100%;background:linear-gradient(90deg,#16a34a,#22c55e)}
+.goal{margin:18px 0}
+.tasks li{margin:10px 0}
+.bottomnav{display:none}
+@media(max-width:768px){
+nav{display:none}
+.bottomnav{
+display:flex;justify-content:space-around;position:fixed;
+bottom:0;left:0;right:0;background:#111827;padding:14px 0;
+}
+body{padding-bottom:70px}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">🧭 Life Routes</div>
+<nav>
+<a href="#">Dashboard</a>
+<a href="#">Goals</a>
+<a href="#">Budget</a>
+<a href="#">Reports</a>
+<a href="#">Settings</a>
+</nav>
+</header>
+
+<div class="container">
+
+<h1>Welcome Back 👋</h1>
+<p style="color:var(--muted)">Every paycheck is another step toward your future.</p>
+
+<div class="grid">
+
+<div class="card">
+<h3>Financial Health</h3>
+<div class="metric">92%</div>
+<p style="color:var(--muted)">Excellent progress</p>
+</div>
+
+<div class="card">
+<h3>Current Savings</h3>
+<div class="metric">$2,540</div>
+<p style="color:var(--muted)">Across all goals</p>
+</div>
+
+<div class="card">
+<h3>30-Day Streak</h3>
+<div class="metric">12 Days</div>
+<p style="color:var(--muted)">Keep building momentum</p>
+</div>
+
+<div class="card">
+<h3>This Month Saved</h3>
+<div class="metric">$450</div>
+<p style="color:var(--muted)">+$50 this week</p>
+</div>
+
+</div>
+
+<div class="grid" style="margin-top:24px">
+
+<div class="card">
+<h2>Goals</h2>
+
+<div class="goal">
+🚗 Vehicle Fund
+<div class="progress"><div class="bar" style="width:42%"></div></div>
+<small>$2,100 / $5,000</small>
+</div>
+
+<div class="goal">
+🛡 Emergency Fund
+<div class="progress"><div class="bar" style="width:60%"></div></div>
+<small>$3,000 / $5,000</small>
+</div>
+
+<div class="goal">
+🎓 School Fund
+<div class="progress"><div class="bar" style="width:18%"></div></div>
+<small>$540 / $3,000</small>
+</div>
+
+<div class="goal">
+💼 Business Fund
+<div class="progress"><div class="bar" style="width:35%"></div></div>
+<small>$700 / $2,000</small>
+</div>
+
+</div>
+
+<div class="card">
+<h2>Today's Checklist</h2>
+<ul class="tasks">
+<li>☐ Stay gambling-free</li>
+<li>☐ Save today's planned amount</li>
+<li>☐ Exercise 30 minutes</li>
+<li>☐ Review spending</li>
+<li>☐ Learn one new skill</li>
+</ul>
+
+<h2>Quick Actions</h2>
+<button>Add Savings</button>
+<button>Update Goals</button>
+<button>View Budget</button>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="bottomnav">
+<span>🏠</span>
+<span>🎯</span>
+<span>💰</span>
+<span>📈</span>
+<span>⚙️</span>
+</div>
+
+</body>
+</html>
