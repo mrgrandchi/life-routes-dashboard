@@ -1,0 +1,31 @@
+/* Topbar */
+.lr-topbar{
+display:flex;align-items:center;justify-content:space-between;
+gap:20px;padding:16px 24px;background:#111827;color:#fff;
+border-bottom:1px solid #243244;position:sticky;top:0;z-index:100;
+}
+.lr-left{display:flex;align-items:center;gap:16px}
+.lr-left h1{margin:0;font-size:1.5rem}
+.lr-left small{color:#94a3b8}
+.menu-btn,.icon-btn{
+background:#1e293b;border:none;color:#fff;
+width:42px;height:42px;border-radius:10px;cursor:pointer;
+}
+.menu-btn:hover,.icon-btn:hover{background:#2b3a4d}
+.lr-search{flex:1;max-width:520px}
+.lr-search input{
+width:100%;padding:12px 14px;border-radius:12px;
+border:1px solid #334155;background:#0f172a;color:#fff;
+}
+.lr-right{display:flex;align-items:center;gap:12px}
+.profile{display:flex;align-items:center;gap:10px;padding-left:10px}
+.avatar{
+width:42px;height:42px;border-radius:50%;
+display:grid;place-items:center;background:#22c55e;
+color:#111827;font-weight:bold;
+}
+@media(max-width:900px){
+.lr-search{display:none}
+.lr-left small,.profile div small{display:none}
+.lr-left h1{font-size:1.2rem}
+}
